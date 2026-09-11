@@ -1,0 +1,1253 @@
+{
+    "$schema": "../../../src/open_yoku_rando/files/schema.json",
+    "configuration_identifier": "starting-items",
+    "save": {
+        "seed": 4294967295
+    },
+    "pickups": [
+        {
+            "location": "intro_landing_upper:5394",
+            "item": "mushroom_2",
+            "caption": "Juicy Cove Mushroom: mushroom_2"
+        },
+        {
+            "location": "intro_landing_upper:5605",
+            "item": "mushroom_3",
+            "caption": "Poison Toadstool: mushroom_3"
+        },
+        {
+            "location": "hub_village:4686",
+            "item": "toolbox",
+            "caption": "Toolbox: toolbox"
+        },
+        {
+            "location": "peak_guano_grief:669",
+            "item": "guano",
+            "caption": "Guano: guano"
+        },
+        {
+            "location": "peak_beanstalk_base:2308",
+            "item": "seed_pod",
+            "caption": "Seed Pod: seed_pod"
+        },
+        {
+            "location": "spring_shoddy_shanty:5433",
+            "item": "skins/skin_3",
+            "caption": "Underwater Puzzle: skins/skin_3"
+        },
+        {
+            "location": "hub_island_express:3692",
+            "item": "wallet",
+            "caption": "Tower's Peak Crystal: wallet"
+        },
+        {
+            "location": "hub_village:4661",
+            "item": "abilities/speed",
+            "caption": "Post Office Attic: abilities/speed"
+        },
+        {
+            "location": "cave_temple_terror_lower:144",
+            "item": "bluekey",
+            "caption": "Key: Blue: bluekey"
+        },
+        {
+            "location": "cave_temple_terror_lower:4978",
+            "item": "greenkey",
+            "caption": "Key: Green: greenkey"
+        },
+        {
+            "location": "peak_filthy_flat:255",
+            "item": "dustbunny_dirty",
+            "caption": "Sootling 1: dustbunny_dirty"
+        },
+        {
+            "location": "peak_filthy_flat:309",
+            "item": "dustbunny_dirty",
+            "caption": "Sootling 2: dustbunny_dirty"
+        },
+        {
+            "location": "peak_filthy_flat:627",
+            "item": "dustbunny_dirty",
+            "caption": "Sootling 3: dustbunny_dirty"
+        },
+        {
+            "location": "peak_filthy_flat:751",
+            "item": "dustbunny_dirty",
+            "caption": "Sootling 4: dustbunny_dirty"
+        },
+        {
+            "location": "peak_filthy_flat:1300",
+            "item": "dustbunny_dirty",
+            "caption": "Sootling 5: dustbunny_dirty"
+        },
+        {
+            "location": "peak_filthy_flat:264",
+            "item": "dustbunny_dirty",
+            "caption": "Sootling 6: dustbunny_dirty"
+        },
+        {
+            "location": "spring_bubbly_basin:1241",
+            "item": "tadpole",
+            "caption": "Tadpole 1: tadpole"
+        },
+        {
+            "location": "spring_bubbly_basin:1238",
+            "item": "tadpole",
+            "caption": "Tadpole 2: tadpole"
+        },
+        {
+            "location": "spring_bubbly_basin:1244",
+            "item": "tadpole",
+            "caption": "Tadpole 3: tadpole"
+        },
+        {
+            "location": "spring_bubbly_basin:1235",
+            "item": "tadpole",
+            "caption": "Tadpole 4: tadpole"
+        },
+        {
+            "location": "spring_bubbly_basin:1229",
+            "item": "tadpole",
+            "caption": "Tadpole 5: tadpole"
+        },
+        {
+            "location": "spring_bubbly_basin:1226",
+            "item": "tadpole",
+            "caption": "Tadpole 6: tadpole"
+        },
+        {
+            "location": "spring_bubbly_basin:1041",
+            "item": "tadpole",
+            "caption": "Tadpole 7: tadpole"
+        },
+        {
+            "location": "spring_bubbly_basin:1232",
+            "item": "tadpole",
+            "caption": "Tadpole 8: tadpole"
+        },
+        {
+            "location": "hub_festival_upper:491",
+            "item": "spores_2",
+            "caption": "Mulch Pit: Village: spores_2"
+        },
+        {
+            "location": "jungle_slug_struggle:3665",
+            "item": "spores_3",
+            "caption": "Mulch Pit: Ape: spores_3"
+        },
+        {
+            "location": "cave_east_bay_shore:804",
+            "item": "spores_4",
+            "caption": "Mulch Pit: Beach: spores_4"
+        },
+        {
+            "location": "peak_guano_grief:2514",
+            "item": "spores_5",
+            "caption": "Mulch Pit: Ivory: spores_5"
+        },
+        {
+            "location": "jungle_willy:1219",
+            "item": "idol1",
+            "caption": "Statue Piece: Waterfall: idol1"
+        },
+        {
+            "location": "cave_temple_terror_lower:4744",
+            "item": "idol2",
+            "caption": "Statue Piece: Underdark: idol2"
+        },
+        {
+            "location": "peak_aerial_ascent:4033",
+            "item": "idol3",
+            "caption": "Statue Piece: Ivory: idol3"
+        },
+        {
+            "location": "hub_obtainium_outland:234",
+            "item": "idol4",
+            "caption": "Statue Piece: Obt. Isles: idol4"
+        },
+        {
+            "location": "peak_crystal_crater:2429",
+            "item": "nugget",
+            "caption": "Nugget 1: nugget"
+        },
+        {
+            "location": "peak_crystal_crater:2238",
+            "item": "nugget",
+            "caption": "Nugget 2: nugget"
+        },
+        {
+            "location": "peak_crystal_crater:2427",
+            "item": "nugget",
+            "caption": "Nugget 3: nugget"
+        },
+        {
+            "location": "peak_crystal_crater:2425",
+            "item": "nugget",
+            "caption": "Nugget 4: nugget"
+        },
+        {
+            "location": "intro_landing_upper:5733",
+            "item": "abilities/partyhorn",
+            "caption": "Chest: Noisemaker: abilities/partyhorn"
+        },
+        {
+            "location": "intro_landing_right:5065",
+            "item": "wallet",
+            "caption": "Chest: Tweepers: wallet"
+        },
+        {
+            "location": "hub_island_express:3644",
+            "item": "wallet",
+            "caption": "Chest: Tower: wallet"
+        },
+        {
+            "location": "jungle_misty_meadow:2378",
+            "item": "abilities/slug_vaccum",
+            "caption": "Chest: Shed: abilities/slug_vaccum"
+        },
+        {
+            "location": "spring_hidden_hotspring:2343",
+            "item": "skins/skin_1",
+            "caption": "Chest: Crystal Skull: skins/skin_1"
+        },
+        {
+            "location": "cave_east_bay_shore:780",
+            "item": "wallet",
+            "caption": "Chest: Beach: wallet"
+        },
+        {
+            "location": "spring_sleek_slabs:4542",
+            "item": "wallet",
+            "caption": "Chest: Church: wallet"
+        },
+        {
+            "location": "peak_filthy_flat:2813",
+            "item": "sootling_leash",
+            "caption": "Chest: Leash: sootling_leash"
+        },
+        {
+            "location": "hub_left_lofty_logo:498",
+            "item": "powerups/skvader_1",
+            "caption": "Chest: Treek: powerups/skvader_1"
+        },
+        {
+            "location": "peak_beanstalk_base:3399",
+            "item": "wallet",
+            "caption": "Chest: Town Skip: wallet"
+        },
+        {
+            "location": "peak_beanstalk_base:3390",
+            "item": "tracker_peak",
+            "caption": "Chest: Lava: tracker_peak"
+        },
+        {
+            "location": "spring_cloudburst_cliffs:4925",
+            "item": "powerups/skvader_2",
+            "caption": "Chest: Waterfall: powerups/skvader_2"
+        },
+        {
+            "location": "intro_muddled_morass:768",
+            "item": "wallet",
+            "caption": "Chest: Fosfor Cave Left: wallet"
+        },
+        {
+            "location": "hub_cliffside_creek:497",
+            "item": "skins/skin_5",
+            "caption": "Chest: Fleek: skins/skin_5"
+        },
+        {
+            "location": "cave_beaver_blockade:4699",
+            "item": "tracker_caves",
+            "caption": "Chest: Screech: tracker_caves"
+        },
+        {
+            "location": "hub_village:4502",
+            "item": "abilities/dive_speed",
+            "caption": "Chest: Willo: abilities/dive_speed"
+        },
+        {
+            "location": "intro_landing:6175",
+            "item": "reward_fruit_medium",
+            "caption": "Mailbox 01: Hairy: reward_fruit_medium"
+        },
+        {
+            "location": "intro_muddled_morass:99",
+            "item": "reward_fruit_medium",
+            "caption": "Mailbox 02: Fosfor: reward_fruit_medium"
+        },
+        {
+            "location": "intro_landing_upper:5673",
+            "item": "reward_fruit_medium",
+            "caption": "Mailbox 03: Baldino: reward_fruit_medium"
+        },
+        {
+            "location": "intro_landing_right:4793",
+            "item": "tracker_scarabs",
+            "caption": "Mailbox 04: Tweepers: tracker_scarabs"
+        },
+        {
+            "location": "hub_cliffside_creek:467",
+            "item": "reward_fruit_medium",
+            "caption": "Mailbox 05: Fleek: reward_fruit_medium"
+        },
+        {
+            "location": "intro_landing_right:4798",
+            "item": "reward_fruit_medium",
+            "caption": "Mailbox 06: Screech: reward_fruit_medium"
+        },
+        {
+            "location": "jungle_slug_struggle:3349",
+            "item": "reward_fruit_medium",
+            "caption": "Mailbox 07: Ape: reward_fruit_medium"
+        },
+        {
+            "location": "jungle_mollusc_madness:3814",
+            "item": "reward_fruit_medium",
+            "caption": "Mailbox 08: Slug Gardener: reward_fruit_medium"
+        },
+        {
+            "location": "jungle_misty_meadow:1967",
+            "item": "reward_fruit_medium",
+            "caption": "Mailbox 09: Shed: reward_fruit_medium"
+        },
+        {
+            "location": "cave_temple_terror_upper:4436",
+            "item": "reward_fruit_medium",
+            "caption": "Mailbox 10: Sal: reward_fruit_medium"
+        },
+        {
+            "location": "cave_clammy_cenote:2440",
+            "item": "reward_fruit_medium",
+            "caption": "Mailbox 11: Rolypoly: reward_fruit_medium"
+        },
+        {
+            "location": "cave_east_bay_shore:708",
+            "item": "reward_fruit_medium",
+            "caption": "Mailbox 12: Beach: reward_fruit_medium"
+        },
+        {
+            "location": "cave_east_bay_shore:703",
+            "item": "reward_fruit_medium",
+            "caption": "Mailbox 13: Quinbe: reward_fruit_medium"
+        },
+        {
+            "location": "spring_gangway_grotto:4670",
+            "item": "reward_fruit_medium",
+            "caption": "Mailbox 14: Hideout: reward_fruit_medium"
+        },
+        {
+            "location": "spring_tiny_broad:5480",
+            "item": "reward_fruit_medium",
+            "caption": "Mailbox 15: Underbelly: reward_fruit_medium"
+        },
+        {
+            "location": "spring_shoddy_shanty:5410",
+            "item": "reward_fruit_medium",
+            "caption": "Mailbox 16: Church: reward_fruit_medium"
+        },
+        {
+            "location": "spring_sleek_slabs:4492",
+            "item": "reward_fruit_medium",
+            "caption": "Mailbox 17: Kambi: reward_fruit_medium"
+        },
+        {
+            "location": "spring_cloudburst_cliffs:4501",
+            "item": "reward_fruit_medium",
+            "caption": "Mailbox 18: Waterfall: reward_fruit_medium"
+        },
+        {
+            "location": "hub_village:4432",
+            "item": "reward_fruit_medium",
+            "caption": "Mailbox 19: Hub: reward_fruit_medium"
+        },
+        {
+            "location": "hub_village:4428",
+            "item": "reward_fruit_medium",
+            "caption": "Mailbox 20: Post Office: reward_fruit_medium"
+        },
+        {
+            "location": "hub_left_lemur_lane:560",
+            "item": "reward_fruit_medium",
+            "caption": "Mailbox 21: Sandro: reward_fruit_medium"
+        },
+        {
+            "location": "hub_white_cliff:1906",
+            "item": "reward_fruit_medium",
+            "caption": "Mailbox 22: Dipperloaf: reward_fruit_medium"
+        },
+        {
+            "location": "peak_aerial_ascent:4056",
+            "item": "reward_fruit_medium",
+            "caption": "Mailbox 23: Treek: reward_fruit_medium"
+        },
+        {
+            "location": "peak_aerial_ascent:4061",
+            "item": "reward_fruit_medium",
+            "caption": "Mailbox 24: Orestation: reward_fruit_medium"
+        },
+        {
+            "location": "peak_filthy_flat:2838",
+            "item": "reward_fruit_medium",
+            "caption": "Mailbox 25: Lighthouse: reward_fruit_medium"
+        },
+        {
+            "location": "hub_hermits_home:263",
+            "item": "reward_fruit_medium",
+            "caption": "Mailbox 26: Sin: reward_fruit_medium"
+        },
+        {
+            "location": "peak_frostpine_forest:2958",
+            "item": "reward_fruit_medium",
+            "caption": "Mailbox 27: Ithaqua: reward_fruit_medium"
+        },
+        {
+            "location": "peak_obtainium_oracle:68",
+            "item": "reward_fruit_medium",
+            "caption": "Mailbox 28: Ojva: reward_fruit_medium"
+        },
+        {
+            "location": "peak_crooked_cliff:1395",
+            "item": "reward_fruit_medium",
+            "caption": "Mailbox 29: Space Monks: reward_fruit_medium"
+        },
+        {
+            "location": "hub_island_express:3627",
+            "item": "reward_fruit_medium",
+            "caption": "Mailbox 30: Tower: reward_fruit_medium"
+        },
+        {
+            "location": "intro_landing:6179",
+            "item": "reward_fruit_big",
+            "caption": "Fruit 31: Banana Chest: reward_fruit_big"
+        },
+        {
+            "location": "cave_temple_terror_treasury:220",
+            "item": "reward_fruit_big",
+            "caption": "Fruit 32: Green Chest: reward_fruit_big"
+        },
+        {
+            "location": "spring_sleek_slabs:4497",
+            "item": "reward_fruit_big",
+            "caption": "Fruit 33: Hook Chest: reward_fruit_big"
+        },
+        {
+            "location": "spring_gangway_grotto:4674",
+            "item": "reward_fruit_big",
+            "caption": "Fruit 34: Underwater Chest: reward_fruit_big"
+        },
+        {
+            "location": "intro_landing_upper:5079",
+            "item": "reward_fruit_medium",
+            "caption": "Scarab 35: Mushrooms Left: reward_fruit_medium"
+        },
+        {
+            "location": "intro_landing_upper:4351",
+            "item": "reward_fruit_medium",
+            "caption": "Scarab 36: Mushrooms Right: reward_fruit_medium"
+        },
+        {
+            "location": "intro_landing_right:4607",
+            "item": "reward_fruit_medium",
+            "caption": "Scarab 37: Sootling House Upper: reward_fruit_medium"
+        },
+        {
+            "location": "intro_landing_right:5098",
+            "item": "reward_fruit_big",
+            "caption": "Scarab 38: Sootling House Lower: reward_fruit_big"
+        },
+        {
+            "location": "jungle_tall_tall_tower:3122",
+            "item": "reward_fruit_big",
+            "caption": "Scarab 39: Tower Right: reward_fruit_big"
+        },
+        {
+            "location": "jungle_tall_tall_tower:2490",
+            "item": "reward_fruit_big",
+            "caption": "Scarab 40: Tower Left: reward_fruit_big"
+        },
+        {
+            "location": "jungle_tall_tall_tower:2495",
+            "item": "reward_fruit_big",
+            "caption": "Scarab 41: Tower Upper: reward_fruit_big"
+        },
+        {
+            "location": "jungle_roots:1895",
+            "item": "reward_fruit_medium",
+            "caption": "Scarab 42: Juicery Lower: reward_fruit_medium"
+        },
+        {
+            "location": "jungle_roots:1897",
+            "item": "reward_fruit_medium",
+            "caption": "Scarab 43: Juicery Upper: reward_fruit_medium"
+        },
+        {
+            "location": "peak_aerial_ascent:4272",
+            "item": "reward_fruit_big",
+            "caption": "Scarab 44: Orestation Right: reward_fruit_big"
+        },
+        {
+            "location": "peak_aerial_ascent:4289",
+            "item": "reward_fruit_big",
+            "caption": "Scarab 45: Orestation Left: reward_fruit_big"
+        },
+        {
+            "location": "peak_filthy_flat:2371",
+            "item": "reward_fruit_big",
+            "caption": "Scarab 46: Lighthouse I Right: reward_fruit_big"
+        },
+        {
+            "location": "peak_filthy_flat:2966",
+            "item": "reward_fruit_big",
+            "caption": "Scarab 47: Lighthouse I Left: reward_fruit_big"
+        },
+        {
+            "location": "peak_filthy_flat:2992",
+            "item": "reward_fruit_big",
+            "caption": "Scarab 48: Lighthouse II: reward_fruit_big"
+        },
+        {
+            "location": "peak_guano_grief:1532",
+            "item": "reward_fruit_big",
+            "caption": "Scarab 49: Town Skip: reward_fruit_big"
+        },
+        {
+            "location": "peak_guano_grief:2497",
+            "item": "reward_fruit_big",
+            "caption": "Scarab 50: Bat: reward_fruit_big"
+        },
+        {
+            "location": "peak_spider_fight:2659",
+            "item": "reward_fruit_big",
+            "caption": "Scarab 51: Spider Cave I: reward_fruit_big"
+        },
+        {
+            "location": "peak_spider_fight:2698",
+            "item": "reward_fruit_big",
+            "caption": "Scarab 52: Spider Cave II: reward_fruit_big"
+        },
+        {
+            "location": "spring_yokos_yam:3229",
+            "item": "reward_fruit_big",
+            "caption": "Scarab 53: Underbelly II Right: reward_fruit_big"
+        },
+        {
+            "location": "spring_yokos_yam:2973",
+            "item": "reward_fruit_big",
+            "caption": "Scarab 54: Underbelly II Left: reward_fruit_big"
+        },
+        {
+            "location": "spring_tiny_broad:2291",
+            "item": "reward_fruit_big",
+            "caption": "Scarab 55: Underbelly I Right: reward_fruit_big"
+        },
+        {
+            "location": "spring_tiny_broad:5620",
+            "item": "reward_fruit_big",
+            "caption": "Scarab 56: Underbelly I Left: reward_fruit_big"
+        },
+        {
+            "location": "spring_tiny_broad:5617",
+            "item": "reward_fruit_big",
+            "caption": "Scarab 57: Underbelly I Mid: reward_fruit_big"
+        },
+        {
+            "location": "jungle_willy:347",
+            "item": "reward_fruit_big",
+            "caption": "Scarab 58: Willo Right: reward_fruit_big"
+        },
+        {
+            "location": "jungle_willy:1910",
+            "item": "reward_fruit_medium",
+            "caption": "Scarab 59: Willo Mid: reward_fruit_medium"
+        },
+        {
+            "location": "jungle_willy:1981",
+            "item": "reward_fruit_big",
+            "caption": "Scarab 60: Willo Left: reward_fruit_big"
+        },
+        {
+            "location": "spring_hidden_hotspring:2319",
+            "item": "reward_fruit_big",
+            "caption": "Scarab 61: Crystal Skull Upper: reward_fruit_big"
+        },
+        {
+            "location": "spring_hidden_hotspring:2315",
+            "item": "reward_fruit_big",
+            "caption": "Scarab 62: Crystal Skull Left: reward_fruit_big"
+        },
+        {
+            "location": "spring_hidden_hotspring:2327",
+            "item": "reward_fruit_big",
+            "caption": "Scarab 63: Crystal Skull Right: reward_fruit_big"
+        },
+        {
+            "location": "cave_temple_terror_lower:4651",
+            "item": "reward_fruit_big",
+            "caption": "Scarab 64: Trial I Right: reward_fruit_big"
+        },
+        {
+            "location": "cave_temple_terror_lower:4654",
+            "item": "reward_fruit_big",
+            "caption": "Scarab 65: Trial I Left: reward_fruit_big"
+        },
+        {
+            "location": "cave_temple_terror_lower:4872",
+            "item": "reward_fruit_medium",
+            "caption": "Scarab 66: Trial II Right: reward_fruit_medium"
+        },
+        {
+            "location": "cave_temple_terror_lower:4855",
+            "item": "reward_fruit_big",
+            "caption": "Scarab 67: Trial II Left: reward_fruit_big"
+        },
+        {
+            "location": "cave_temple_terror_lower:4896",
+            "item": "reward_fruit_medium",
+            "caption": "Scarab 68: Trial III Right: reward_fruit_medium"
+        },
+        {
+            "location": "cave_temple_terror_lower:4910",
+            "item": "reward_fruit_big",
+            "caption": "Scarab 69: Trial III Left: reward_fruit_big"
+        },
+        {
+            "location": "cave_beaver_blockade:4832",
+            "item": "reward_fruit_big",
+            "caption": "Scarab 70: Door Friend I: reward_fruit_big"
+        },
+        {
+            "location": "jungle_mollusc_madness:4237",
+            "item": "reward_fruit_big",
+            "caption": "Scarab 71: Meadow I Left: reward_fruit_big"
+        },
+        {
+            "location": "jungle_mollusc_madness:4235",
+            "item": "reward_fruit_medium",
+            "caption": "Scarab 72: Meadow I Right: reward_fruit_medium"
+        },
+        {
+            "location": "jungle_mollusc_madness:4253",
+            "item": "reward_fruit_big",
+            "caption": "Scarab 73: Meadow II Upper: reward_fruit_big"
+        },
+        {
+            "location": "jungle_mollusc_madness:4274",
+            "item": "reward_fruit_big",
+            "caption": "Scarab 74: Meadow II Lower: reward_fruit_big"
+        },
+        {
+            "location": "jungle_mollusc_madness:4303",
+            "item": "reward_fruit_big",
+            "caption": "Scarab 75: Meadow IV: reward_fruit_big"
+        },
+        {
+            "location": "jungle_mollusc_madness:2562",
+            "item": "reward_fruit_big",
+            "caption": "Scarab 76: Meadow V: reward_fruit_big"
+        },
+        {
+            "location": "spring_cloudburst_cliffs:4156",
+            "item": "reward_fruit_big",
+            "caption": "Fruit 77: Waterfall Left: reward_fruit_big"
+        },
+        {
+            "location": "spring_tiny_broad:5511",
+            "item": "reward_fruit_big",
+            "caption": "Fruit 78: Underbelly: reward_fruit_big"
+        },
+        {
+            "location": "spring_cloudburst_cliffs:4159",
+            "item": "reward_fruit_big",
+            "caption": "Fruit 79: Waterfall Right: reward_fruit_big"
+        },
+        {
+            "location": "jungle_crammed_canopy:608",
+            "item": "reward_fruit_big",
+            "caption": "Fruit 80: Meadows Slug Rock: reward_fruit_big"
+        },
+        {
+            "location": "spring_sleek_slabs:4366",
+            "item": "reward_fruit_big",
+            "caption": "Fruit 81: Marrow Jump: reward_fruit_big"
+        },
+        {
+            "location": "cave_beaver_blockade:4874",
+            "item": "reward_fruit_big",
+            "caption": "Fruit 82: Screech Door Bones: reward_fruit_big"
+        },
+        {
+            "location": "peak_frostpine_forest:3596",
+            "item": "reward_fruit_big",
+            "caption": "Fruit 83: Sootling Cave Water: reward_fruit_big"
+        },
+        {
+            "location": "peak_frostpine_forest:3319",
+            "item": "reward_fruit_big",
+            "caption": "Fruit 84: Sootling Cave Right: reward_fruit_big"
+        },
+        {
+            "location": "peak_frostpine_forest:3308",
+            "item": "reward_fruit_big",
+            "caption": "Fruit 85: Sootling Cave Left: reward_fruit_big"
+        },
+        {
+            "location": "hub_soaring_stone:2595",
+            "item": "reward_fruit_big",
+            "caption": "Fruit 86: Sin: reward_fruit_big"
+        },
+        {
+            "location": "peak_crystal_crater:2901",
+            "item": "reward_fruit_big",
+            "caption": "Fruit 87: Crystal Lake: reward_fruit_big"
+        },
+        {
+            "location": "peak_ice_cold_idol:2411",
+            "item": "reward_fruit_big",
+            "caption": "Fruit 88: Spider Cave: reward_fruit_big"
+        },
+        {
+            "location": "cave_temple_terror_treasury:505",
+            "item": "reward_fruit_big",
+            "caption": "Fruit 89: Treasure Room: reward_fruit_big"
+        },
+        {
+            "location": "cave_beach_bottom:103",
+            "item": "reward_fruit_medium",
+            "caption": "Fruit 90: Ocean Heart: reward_fruit_medium"
+        },
+        {
+            "location": "hub_village:4159",
+            "item": "abilities/mailbag",
+            "caption": "NPC: Lemon: abilities/mailbag"
+        },
+        {
+            "location": "hub_village:4674",
+            "item": "reward_fruit_big",
+            "caption": "NPC: Lemon, All Packages: reward_fruit_big"
+        },
+        {
+            "location": "hub_village:3828",
+            "item": "spores_1",
+            "caption": "NPC: Rinri, Quest: spores_1"
+        },
+        {
+            "location": "hub_village:4544",
+            "item": "abilities/slug_upgrade",
+            "caption": "NPC: Rinri, Reward: abilities/slug_upgrade"
+        },
+        {
+            "location": "intro_landing_right:4380",
+            "item": "reward_fruit_big",
+            "caption": "NPC: Tweepers: reward_fruit_big"
+        },
+        {
+            "location": "jungle_slug_struggle:3564",
+            "item": "wallet",
+            "caption": "NPC: Skeeper: wallet"
+        },
+        {
+            "location": "spring_cloudburst_cliffs:5014",
+            "item": "tracker_jungle",
+            "caption": "NPC: Cleepers: tracker_jungle"
+        },
+        {
+            "location": "spring_bubbly_basin:1154",
+            "item": "abilities/dive",
+            "caption": "NPC: Dive Fish: abilities/dive"
+        },
+        {
+            "location": "spring_bubbly_basin:896",
+            "item": "wallet",
+            "caption": "NPC: Myrtle: wallet"
+        },
+        {
+            "location": "hub_left_lofty_logo:428",
+            "item": "reward_fruit_big",
+            "caption": "NPC: Treek: reward_fruit_big"
+        },
+        {
+            "location": "cave_east_bay_shore:648",
+            "item": "wallet",
+            "caption": "NPC: Quinbe: wallet"
+        },
+        {
+            "location": "peak_crystal_crater:2908",
+            "item": "treasure_map",
+            "caption": "NPC: Sumoe: treasure_map"
+        },
+        {
+            "location": "spring_gangway_grotto:4725",
+            "item": "tracker_springs",
+            "caption": "NPC: Splank: tracker_springs"
+        },
+        {
+            "location": "cave_temple_terror_lower:4997",
+            "item": "skins/skin_2",
+            "caption": "NPC: Liquorice: skins/skin_2"
+        },
+        {
+            "location": "intro_landing:5622",
+            "item": "postal_badge",
+            "caption": "NPC: Posterodactyl: postal_badge"
+        },
+        {
+            "location": "jungle_canyon_caper:2679",
+            "item": "abilities/kickback",
+            "caption": "NPC: Kickback: abilities/kickback"
+        },
+        {
+            "location": "hub_festival:3819",
+            "item": "nim_key",
+            "caption": "NPC: Nim: nim_key"
+        },
+        {
+            "location": "hub_white_cliff:1954",
+            "item": "skins/skin_4",
+            "caption": "NPC: Dipperloaf: skins/skin_4"
+        },
+        {
+            "location": "peak_beanstalk_base:3171",
+            "item": "bucket_empty",
+            "caption": "NPC: Jamja: bucket_empty"
+        },
+        {
+            "location": "spring_gangway_grotto:4531",
+            "item": "spring_key",
+            "caption": "NPC: Jojo: spring_key"
+        },
+        {
+            "location": "hub_cliffside_creek:555",
+            "item": "reward_fruit_big",
+            "caption": "NPC: Fleek: reward_fruit_big"
+        },
+        {
+            "location": "jungle_spikey_stockade:206",
+            "item": "abilities/double_fruit",
+            "caption": "NPC: Dusk: abilities/double_fruit"
+        },
+        {
+            "location": "intro_landing_left:91",
+            "item": "wickerling",
+            "caption": "Wl. 01: Beach Dive 1: wickerling"
+        },
+        {
+            "location": "intro_secret:41",
+            "item": "wickerling",
+            "caption": "Wl. 02: Beach Dive 2: wickerling"
+        },
+        {
+            "location": "intro_landing:6118",
+            "item": "wickerling",
+            "caption": "Wl. 03: Hairy: wickerling"
+        },
+        {
+            "location": "intro_landing_upper:5623",
+            "item": "wickerling",
+            "caption": "Wl. 04: Intro 1: wickerling"
+        },
+        {
+            "location": "intro_landing_upper:3929",
+            "item": "wickerling",
+            "caption": "Wl. 05: Intro 2: wickerling"
+        },
+        {
+            "location": "intro_landing:6029",
+            "item": "wickerling",
+            "caption": "Wl. 06: Fosfor Tunnel: wickerling"
+        },
+        {
+            "location": "intro_landing_creepy_cavern:707",
+            "item": "wickerling",
+            "caption": "Wl. 07: Fosfor Cave: wickerling"
+        },
+        {
+            "location": "intro_landing_creepy_cavern:691",
+            "item": "wickerling",
+            "caption": "Wl. 08: Fosfor Door: wickerling"
+        },
+        {
+            "location": "intro_landing_upper:5745",
+            "item": "wickerling",
+            "caption": "Wl. 09: Above Fosfor: wickerling"
+        },
+        {
+            "location": "intro_landing_right:4993",
+            "item": "wickerling",
+            "caption": "Wl. 10: Gorila Woods Beeline: wickerling"
+        },
+        {
+            "location": "jungle_tall_tall_tower:1140",
+            "item": "wickerling",
+            "caption": "Wl. 11: Tower Table: wickerling"
+        },
+        {
+            "location": "jungle_canyon_caper:1839",
+            "item": "wickerling",
+            "caption": "Wl. 12: Ape Chest: wickerling"
+        },
+        {
+            "location": "jungle_slug_struggle:3145",
+            "item": "wickerling",
+            "caption": "Wl. 13: Ape Hook: wickerling"
+        },
+        {
+            "location": "jungle_slug_struggle:443",
+            "item": "wickerling",
+            "caption": "Wl. 14: Ape Entry: wickerling"
+        },
+        {
+            "location": "jungle_slug_struggle:2890",
+            "item": "wickerling",
+            "caption": "Wl. 15: Ape Right: wickerling"
+        },
+        {
+            "location": "jungle_mollusc_madness:2843",
+            "item": "wickerling",
+            "caption": "Wl. 16: Slug Gardener Spot 2: wickerling"
+        },
+        {
+            "location": "jungle_mollusc_madness:3256",
+            "item": "wickerling",
+            "caption": "Wl. 17: Slug Gardener Spot 1: wickerling"
+        },
+        {
+            "location": "jungle_crammed_canopy:651",
+            "item": "wickerling",
+            "caption": "Wl. 18: Meadow Slug Jump: wickerling"
+        },
+        {
+            "location": "jungle_crammed_canopy:514",
+            "item": "wickerling",
+            "caption": "Wl. 19: Waterfall Bottom: wickerling"
+        },
+        {
+            "location": "jungle_misty_meadow:1854",
+            "item": "wickerling",
+            "caption": "Wl. 20: Shed: wickerling"
+        },
+        {
+            "location": "spring_cloudburst_cliffs:4777",
+            "item": "wickerling",
+            "caption": "Wl. 21: Waterfall Ledge: wickerling"
+        },
+        {
+            "location": "spring_jailhouse_japes:1232",
+            "item": "wickerling",
+            "caption": "Wl. 22: Waterfall Dive Through: wickerling"
+        },
+        {
+            "location": "jungle_tall_tall_tower:1187",
+            "item": "wickerling",
+            "caption": "Wl. 23: Tower Mid: wickerling"
+        },
+        {
+            "location": "hub_island_express:3652",
+            "item": "wickerling",
+            "caption": "Wl. 24: Tower Top: wickerling"
+        },
+        {
+            "location": "hub_village:3905",
+            "item": "wickerling",
+            "caption": "Wl. 25: Lonka: wickerling"
+        },
+        {
+            "location": "hub_village:4423",
+            "item": "wickerling",
+            "caption": "Wl. 26: Post Office Junk: wickerling"
+        },
+        {
+            "location": "hub_village:4511",
+            "item": "wickerling",
+            "caption": "Wl. 27: All Mailboxes: wickerling"
+        },
+        {
+            "location": "hub_festival_upper:522",
+            "item": "wickerling",
+            "caption": "Wl. 28: Above Rinri: wickerling"
+        },
+        {
+            "location": "hub_festival_upper:854",
+            "item": "wickerling",
+            "caption": "Wl. 29: Instrument Cave: wickerling"
+        },
+        {
+            "location": "hub_left_lofty_logo:273",
+            "item": "wickerling",
+            "caption": "Wl. 30: Treek: wickerling"
+        },
+        {
+            "location": "hub_white_cliff:1919",
+            "item": "wickerling",
+            "caption": "Wl. 31: Dipperloaf: wickerling"
+        },
+        {
+            "location": "jungle_roots:518",
+            "item": "wickerling",
+            "caption": "Wl. 32: Juicery Upper: wickerling"
+        },
+        {
+            "location": "jungle_roots:961",
+            "item": "wickerling",
+            "caption": "Wl. 33: Juicery Left: wickerling"
+        },
+        {
+            "location": "intro_landing_upper:5382",
+            "item": "wickerling",
+            "caption": "Wl. 34: Fleek: wickerling"
+        },
+        {
+            "location": "hub_soaring_stone:2605",
+            "item": "wickerling",
+            "caption": "Wl. 35: Sin Totem: wickerling"
+        },
+        {
+            "location": "hub_obtainium_outland:651",
+            "item": "wickerling",
+            "caption": "Wl. 36: Obt. Puzzle: wickerling"
+        },
+        {
+            "location": "hub_bowel_bumping_left:3147",
+            "item": "wickerling",
+            "caption": "Wl. 37: End Boss Fight: wickerling"
+        },
+        {
+            "location": "peak_aerial_ascent:2666",
+            "item": "wickerling",
+            "caption": "Wl. 38: Orestation Bottom: wickerling"
+        },
+        {
+            "location": "peak_aerial_ascent:2221",
+            "item": "wickerling",
+            "caption": "Wl. 39: God Misfire: wickerling"
+        },
+        {
+            "location": "peak_aerial_ascent:4109",
+            "item": "wickerling",
+            "caption": "Wl. 40: Leap of Faith: wickerling"
+        },
+        {
+            "location": "peak_aerial_ascent:2560",
+            "item": "wickerling",
+            "caption": "Wl. 41: Squirrowl: wickerling"
+        },
+        {
+            "location": "peak_aerial_ascent:4247",
+            "item": "wickerling",
+            "caption": "Wl. 42: Orestation Hook: wickerling"
+        },
+        {
+            "location": "peak_filthy_flat:2868",
+            "item": "wickerling",
+            "caption": "Wl. 43: Lighthouse Ledge: wickerling"
+        },
+        {
+            "location": "peak_filthy_flat:2113",
+            "item": "wickerling",
+            "caption": "Wl. 44: Lighthouse Slug Rock: wickerling"
+        },
+        {
+            "location": "peak_filthy_flat:977",
+            "item": "wickerling",
+            "caption": "Wl. 45: Lighthouse Leap: wickerling"
+        },
+        {
+            "location": "peak_frostpine_forest:3186",
+            "item": "wickerling",
+            "caption": "Wl. 46: Sootling Cave: wickerling"
+        },
+        {
+            "location": "peak_guano_grief:1167",
+            "item": "wickerling",
+            "caption": "Wl. 47: Kickback Hiding Cave: wickerling"
+        },
+        {
+            "location": "peak_guano_grief:190",
+            "item": "wickerling",
+            "caption": "Wl. 48: Telescope Skip Lower: wickerling"
+        },
+        {
+            "location": "peak_guano_grief:2424",
+            "item": "wickerling",
+            "caption": "Wl. 49: Telescope Skip Upper: wickerling"
+        },
+        {
+            "location": "peak_beanstalk_base:2807",
+            "item": "wickerling",
+            "caption": "Wl. 50: Ivory Hook Lower: wickerling"
+        },
+        {
+            "location": "peak_crystal_crater:2096",
+            "item": "wickerling",
+            "caption": "Wl. 51: Sumoe: wickerling"
+        },
+        {
+            "location": "peak_beanstalk_base:3117",
+            "item": "wickerling",
+            "caption": "Wl. 52: Ivory Hook Upper: wickerling"
+        },
+        {
+            "location": "peak_beanstalk_base:3486",
+            "item": "wickerling",
+            "caption": "Wl. 53: Jamja Ledge: wickerling"
+        },
+        {
+            "location": "peak_ice_cold_idol:2479",
+            "item": "wickerling",
+            "caption": "Wl. 54: Spider Cave Entry: wickerling"
+        },
+        {
+            "location": "peak_spider_fight:525",
+            "item": "wickerling",
+            "caption": "Wl. 55: Spider Cave Slug Rock: wickerling"
+        },
+        {
+            "location": "jungle_willy:1997",
+            "item": "wickerling",
+            "caption": "Wl. 56: Above Willo at Waterfall: wickerling"
+        },
+        {
+            "location": "spring_sleek_slabs:4541",
+            "item": "wickerling",
+            "caption": "Wl. 57: Church Chest: wickerling"
+        },
+        {
+            "location": "spring_shoddy_shanty:5101",
+            "item": "wickerling",
+            "caption": "Wl. 58: Church Ceiling: wickerling"
+        },
+        {
+            "location": "spring_shoddy_shanty:4210",
+            "item": "wickerling",
+            "caption": "Wl. 59: Dive Cave Entry: wickerling"
+        },
+        {
+            "location": "spring_bubbly_basin:1055",
+            "item": "wickerling",
+            "caption": "Wl. 60: Dive Cave Chest: wickerling"
+        },
+        {
+            "location": "spring_sleek_slabs:4386",
+            "item": "wickerling",
+            "caption": "Wl. 61: Underwater at Hook Chest: wickerling"
+        },
+        {
+            "location": "spring_tiny_broad:2423",
+            "item": "wickerling",
+            "caption": "Wl. 62: Underbelly I Left: wickerling"
+        },
+        {
+            "location": "spring_tiny_broad:4000",
+            "item": "wickerling",
+            "caption": "Wl. 63: Underbelly I Upper: wickerling"
+        },
+        {
+            "location": "spring_tiny_broad:865",
+            "item": "wickerling",
+            "caption": "Wl. 64: Underbelly I Right: wickerling"
+        },
+        {
+            "location": "spring_tiny_broad:5241",
+            "item": "wickerling",
+            "caption": "Wl. 65: Underbelly II Hidden: wickerling"
+        },
+        {
+            "location": "spring_yokos_yam:3405",
+            "item": "wickerling",
+            "caption": "Wl. 66: Hideout Drop 2: wickerling"
+        },
+        {
+            "location": "spring_gangway_grotto:4415",
+            "item": "wickerling",
+            "caption": "Wl. 67: Sush: wickerling"
+        },
+        {
+            "location": "spring_gangway_grotto:4377",
+            "item": "wickerling",
+            "caption": "Wl. 68: Hideout Ledge: wickerling"
+        },
+        {
+            "location": "spring_gangway_grotto:4479",
+            "item": "wickerling",
+            "caption": "Wl. 69: Hideout Slug Rock: wickerling"
+        },
+        {
+            "location": "spring_gangway_grotto:4613",
+            "item": "wickerling",
+            "caption": "Wl. 70: Hideout Drop 1: wickerling"
+        },
+        {
+            "location": "spring_tortoise_tunnel:3203",
+            "item": "wickerling",
+            "caption": "Wl. 71: Crystal Skull Upper: wickerling"
+        },
+        {
+            "location": "spring_hidden_hotspring:2026",
+            "item": "wickerling",
+            "caption": "Wl. 72: Crystal Skull Slug Rock: wickerling"
+        },
+        {
+            "location": "spring_hidden_hotspring:1575",
+            "item": "wickerling",
+            "caption": "Wl. 73: Crystal Skull Chest: wickerling"
+        },
+        {
+            "location": "cave_clammy_cenote:1809",
+            "item": "wickerling",
+            "caption": "Wl. 74: Above Rolypoly: wickerling"
+        },
+        {
+            "location": "cave_clammy_cenote:332",
+            "item": "wickerling",
+            "caption": "Wl. 75: Crystal Deep Beel. Ledge: wickerling"
+        },
+        {
+            "location": "cave_clammy_cenote:901",
+            "item": "wickerling",
+            "caption": "Wl. 76: Underdark Water Puzzle: wickerling"
+        },
+        {
+            "location": "cave_temple_terror_treasury:216",
+            "item": "wickerling",
+            "caption": "Wl. 77: Blue Chest: wickerling"
+        },
+        {
+            "location": "cave_winding_waterway:902",
+            "item": "wickerling",
+            "caption": "Wl. 78: Pitch: wickerling"
+        },
+        {
+            "location": "cave_abyssal_access:1367",
+            "item": "wickerling",
+            "caption": "Wl. 79: Screech Door Hook: wickerling"
+        },
+        {
+            "location": "cave_abyssal_access:1223",
+            "item": "wickerling",
+            "caption": "Wl. 80: Behind Screech: wickerling"
+        },
+        {
+            "location": "jungle_slug_struggle:3473",
+            "item": "traitor_spirit",
+            "caption": "Traitor Spirit 1: traitor_spirit"
+        },
+        {
+            "location": "jungle_slug_struggle:3513",
+            "item": "traitor_spirit",
+            "caption": "Traitor Spirit 2: traitor_spirit"
+        },
+        {
+            "location": "jungle_slug_struggle:3471",
+            "item": "traitor_spirit",
+            "caption": "Traitor Spirit 3: traitor_spirit"
+        },
+        {
+            "location": "jungle_slug_struggle:3411",
+            "item": "traitor_spirit",
+            "caption": "Traitor Spirit 4: traitor_spirit"
+        }
+    ],
+    "starting_items": {
+        "abilities/dive": 1,
+        "wallet": 2
+    }
+}

@@ -1,0 +1,189 @@
+name: Python Package
+
+on:
+  pull_request:
+  merge_group:
+  push:
+    branches:
+      - main
+    tags:
+      - '*'
+
+jobs:
+  native:
+    runs-on: windows-latest
+    name: Native DLLs
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          submodules: true
+
+      - name: build
+        shell: cmd
+        run: native\build.cmd
+
+      - name: Store the DLLs
+        uses: actions/upload-artifact@v7
+        with:
+          name: native-dlls
+          path: src/open_yoku_rando/files/native/*.dll
+          if-no-files-found: error
+
+  build:
+    runs-on: ubuntu-latest
+    name: Wheel
+    needs: native
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v7
+        with:
+          enable-cache: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Get the DLLs
+        uses: actions/download-artifact@v7
+        with:
+          name: native-dlls
+          path: src/open_yoku_rando/files/native
+
+      - name: build
+        run: uv build
+
+      - name: check the wheel holds the DLLs
+        run: |
+          python - <<'EOF'
+          import glob, zipfile
+          [wheel] = glob.glob("dist/*.whl")
+          names = zipfile.ZipFile(wheel).namelist()
+          for dll in ("open_yoku_rando/files/native/open_yoku_rando.dll", "open_yoku_rando/files/native/xinput9_1_0.dll"):
+              assert dll in names, f"{dll} is missing from {wheel}"
+          print(f"{wheel} holds both DLLs")
+          EOF
+
+      - name: Store the packages
+        uses: actions/upload-artifact@v7
+        with:
+          name: python-package-distributions
+          path: dist
+
+  test:
+    runs-on: ubuntu-latest
+    name: Test Python ${{ matrix.python.version }}
+    needs: native
+    strategy:
+      fail-fast: false
+      matrix:
+        python:
+          - {version: '3.12'}
+          - {version: '3.13'}
+          - {version: '3.14'}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v7
+        with:
+          enable-cache: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: ${{ matrix.python.version }}
+
+      # The patcher's install tests copy the DLLs like a real export does.
+      - name: Get the DLLs
+        uses: actions/download-artifact@v7
+        with:
+          name: native-dlls
+          path: src/open_yoku_rando/files/native
+
+      - name: install
+        run: uv sync --frozen --extra dev --python ${{ matrix.python.version }}
+
+      # Tests that need the game are skipped, since YOKU_GAME_PATH isn't set in CI.
+      - name: run pytest
+        run: uv run --frozen --extra dev --python ${{ matrix.python.version }} pytest --cov open_yoku_rando --cov-report=xml tests
+
+  lint:
+    runs-on: 'ubuntu-latest'
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v7
+        with:
+          enable-cache: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install Python packages
+        run: uv sync --frozen --extra dev
+
+      - name: Run Mypy
+        run: uv run --frozen --extra dev mypy
+
+      - name: Run Ruff
+        run: uv run --frozen --extra dev ruff check
+
+  pypi:
+    runs-on: 'ubuntu-latest'
+    needs:
+      - build
+      - test
+      - lint
+
+    permissions:
+      id-token: write
+      contents: write
+
+    steps:
+      - name: Download all the dists
+        uses: actions/download-artifact@v7
+        with:
+          name: python-package-distributions
+          path: dist/
+
+      - name: Publish 📦 to TestPyPI
+        if: ${{ github.ref == 'refs/heads/main' }}
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          repository-url: https://test.pypi.org/legacy/
+          attestations: false
+
+      - name: Create GitHub release
+        uses: svenstaro/upload-release-action@2.11.5
+        if: ${{ startsWith(github.ref, 'refs/tags/') }}
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: dist/*
+          file_glob: true
+          tag: ${{ github.ref }}
+          overwrite: true
+          body: "New release"
+
+      - name: Publish 📦 to PyPI
+        if: ${{ startsWith(github.ref, 'refs/tags/') }}
+        uses: pypa/gh-action-pypi-publish@release/v1

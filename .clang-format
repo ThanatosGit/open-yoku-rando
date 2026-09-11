@@ -1,0 +1,8 @@
+BasedOnStyle: Google
+IndentWidth: 4
+ColumnLimit: 160
+AccessModifierOffset: -2
+InsertBraces: true
+AllowShortFunctionsOnASingleLine: Empty
+IncludeBlocks: Preserve
+Standard: c++20

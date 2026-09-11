@@ -1,0 +1,48 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.coverage
+.coverage.*
+.cache
+coverage.xml
+.pytest_cache/
+
+# Environments
+.env
+.venv
+env/
+venv/
+
+# mypy / ruff
+.mypy_cache/
+.dmypy.json
+.ruff_cache/
+
+# IDEs
+.idea/
+.vscode
+
+# Project
+src/open_yoku_rando/version.py
+
+ignore/
+# Built by native/build.cmd into the package data; CI builds its own
+src/open_yoku_rando/files/native/
+
+# Local development tool, not part of the project
+tools/__init__.py
+tools/devtool/

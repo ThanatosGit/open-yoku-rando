@@ -1,0 +1,183 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "$schema": {
+            "type": "string"
+        },
+        "configuration_identifier": {
+            "type": "string",
+            "description": "An unique identifier for this configuration. It is stored in the save's _global.quests_completed as \"@open-yoku-rando:<identifier>\"."
+        },
+        "seed_hash": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[^\\t\\r\\n]*$",
+            "description": "The seed hash as Randovania shows it, e.g. \"Word Word Word (ABCD2345)\". The game's menu shows it as \"Start Randovania Seed: <seed_hash>\"; without it, the menu shows the configuration identifier."
+        },
+        "layout_uuid": {
+            "description": "An UUID for the layout. Stored in the save's _global.quests_completed as \"@open-yoku-rando:uuid:<uuid>\", where Randovania's multiworld connection reads it.",
+            "default": "00000000-0000-1111-0000-000000000000",
+            "type": "string",
+            "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
+        },
+        "save": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "seed": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 4294967295,
+                    "description": "Stored as _global.randomizer_seed."
+                }
+            },
+            "required": [
+                "seed"
+            ]
+        },
+        "pickups": {
+            "type": "array",
+            "description": "One pickup for each of the 248 randomizer locations.",
+            "minItems": 248,
+            "maxItems": 248,
+            "items": {
+                "$ref": "#/$defs/pickup"
+            }
+        },
+        "starting_items": {
+            "type": "object",
+            "description": "Items added to _global.items. The game stores a quantity above 1 as a count.",
+            "default": {},
+            "propertyNames": {
+                "$ref": "#/$defs/starting_item_id"
+            },
+            "additionalProperties": {
+                "type": "integer",
+                "minimum": 1
+            }
+        },
+        "starting_fruit": {
+            "type": "integer",
+            "description": "Fruit added to _global.fruit and total_fruit.",
+            "default": 0,
+            "minimum": 0
+        },
+        "required_beacons": {
+            "type": "integer",
+            "description": "Beacons that must be lit, 10 Wickerlings each, before Nim starts the ceremony that leads to the final boss. 0 keeps the ceremony as it is.",
+            "default": 0,
+            "minimum": 0,
+            "maximum": 8
+        }
+    },
+    "required": [
+        "configuration_identifier",
+        "save",
+        "pickups"
+    ],
+    "$defs": {
+        "pickup": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "location": {
+                    "type": "string",
+                    "description": "The location's Spawn ID from the randomizer CSVs.",
+                    "pattern": "^[a-z0-9_]+:[0-9]+$"
+                },
+                "item": {
+                    "$ref": "#/$defs/item_id"
+                },
+                "caption": {
+                    "type": "string",
+                    "description": "What the pickup dialog says at this location. A \"nothing\" without one says \"You found Nothing!\"; any other item without one shows the game's own text. Shown by the open-yoku-rando DLL."
+                },
+                "model": {
+                    "type": "string",
+                    "description": "Which model the bubble shows. Only for a \"nothing\" pickup; every other item brings its own.",
+                    "pattern": "^[a-z][a-z0-9_]*$"
+                }
+            },
+            "required": [
+                "location",
+                "item"
+            ]
+        },
+        "starting_item_id": {
+            "description": "Items that work in _global.items.",
+            "allOf": [
+                {
+                    "$ref": "#/$defs/item_id"
+                },
+                {
+                    "not": {
+                        "enum": [
+                            "nothing",
+                            "reward_fruit_big",
+                            "reward_fruit_medium"
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_id": {
+            "description": "Internal item names, from the Item and requirement columns of the randomizer CSVs, plus \"nothing\" for a location that holds nothing the game knows.",
+            "enum": [
+                "abilities/dive",
+                "abilities/dive_speed",
+                "abilities/double_fruit",
+                "abilities/kickback",
+                "abilities/mailbag",
+                "abilities/partyhorn",
+                "abilities/slug_upgrade",
+                "abilities/slug_vaccum",
+                "abilities/speed",
+                "bluekey",
+                "bucket_empty",
+                "dustbunny_dirty",
+                "greenkey",
+                "guano",
+                "idol1",
+                "idol2",
+                "idol3",
+                "idol4",
+                "mushroom_2",
+                "mushroom_3",
+                "nim_key",
+                "nothing",
+                "nugget",
+                "postal_badge",
+                "powerups/skvader_1",
+                "powerups/skvader_2",
+                "reward_fruit_big",
+                "reward_fruit_medium",
+                "seed_pod",
+                "skins/skin_1",
+                "skins/skin_2",
+                "skins/skin_3",
+                "skins/skin_4",
+                "skins/skin_5",
+                "sootling_leash",
+                "spores_1",
+                "spores_2",
+                "spores_3",
+                "spores_4",
+                "spores_5",
+                "spring_key",
+                "tadpole",
+                "toolbox",
+                "tracker_caves",
+                "tracker_jungle",
+                "tracker_peak",
+                "tracker_scarabs",
+                "tracker_springs",
+                "traitor_spirit",
+                "treasure_map",
+                "wallet",
+                "wickerling"
+            ]
+        }
+    }
+}

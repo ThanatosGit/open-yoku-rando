@@ -1,0 +1,132 @@
+[build-system]
+requires = [
+    "setuptools>=64",
+    "setuptools_scm[toml]>=8",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "open-yoku-rando"
+description = "An open source randomizer patcher for Yoku's Island Express."
+authors = [
+    { name = "Thanatos", email = "thanatosstr89@gmail.com" }
+]
+classifiers = [
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+]
+requires-python = ">=3.12"
+dependencies = [
+    "jsonschema>=4.0.0",
+]
+dynamic = ["version"]
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+# Entry Points for PyInstaller
+[project.entry-points.pyinstaller40]
+hook-dirs = "open_yoku_rando.__pyinstaller:get_hook_dirs"
+
+[project.optional-dependencies]
+dev = [
+    "types-jsonschema",
+    "types-pyinstaller",
+    "mypy",
+    "pre-commit",
+    "ruff",
+    "pytest",
+    "pytest-cov",
+    "pytest-mock",
+]
+
+[tool.setuptools.package-data]
+open_yoku_rando = [
+    "py.typed",
+    "files/*.json",
+    "files/items/*.sim",
+    "files/native/*.dll",
+]
+
+[tool.setuptools_scm]
+local_scheme = "no-local-version"
+version_file = "src/open_yoku_rando/version.py"
+# The repository has no commits (and no tags) yet.
+fallback_version = "0.0.0"
+
+[tool.ruff]
+line-length = 120
+lint.select = [
+    "E", "F", "W", "C90", "I", "UP", "C4",
+    "RSE",
+    "TCH",
+    "PTH",
+    "COM818", "COM819",
+    "ISC",
+    "PIE",
+    "PT",
+
+    "PLC",
+    "PLC0208",  # iterating over set is also not deterministic, so we shouldn't do that!
+
+    "PLE",
+    "PLR0402", "SIM101", "PLR1711", "PLR1722", "PLR0206",
+    "PLR0133", "PLR0124",
+    "PLW",
+]
+
+lint.extend-ignore = [
+    "PLC0415", # we explicitly use the import within a function to postpone the loading of a module
+]
+
+# Version to target for generated code.
+target-version = "py312"
+
+[tool.ruff.lint.mccabe]
+# Flag errors (`C901`) whenever the complexity level exceeds 25.
+# Defaults to 10, but we're being very flexible right now
+max-complexity = 25
+
+[tool.mypy]
+files = [
+    "src/",
+    "tools/",
+    "tests/",
+]
+# The local development tool is not part of the repository.
+exclude = ["^tools/devtool/"]
+follow_imports = "silent"
+disallow_untyped_defs = true
+local_partial_types = true
+
+[[tool.mypy.overrides]]
+# Pillow is only needed to run tools/make_item_texture.py, which is invoked with `uv run --with pillow`; it is
+# deliberately not a dependency of the patcher or of a dev install.
+module = "PIL.*"
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = "tests.*"
+disallow_untyped_defs = false
+check_untyped_defs = true
+disable_error_code = "method-assign"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+testpaths = [
+    "tests",
+]
+# So the tests can import `tests` as a package.
+pythonpath = [
+    ".",
+]
+xfail_strict = true
+filterwarnings = [
+    "error",
+    "ignore::DeprecationWarning",
+]
